@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./images/icon.png">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+
+
+</head>
+<body>
+   
+
+        <nav class="navbar navbar-expand fixed-top bg-light  shadow    ">
+            <a href="" class="navbar-brand ms-5"><img src="./images/icon.png" style="width: 13%;" alt=""></a>
+            <p>SECURECHECKOUT</p>
+            <div class="container-fluid justify-content-end">
+                
+                <ul class="navbar-nav me-5  justify-content-evenly">
+                    
+                    <li class="nav-item"><a href="" class="nav-link">Help</a></li>
+                    <li class="nav-item"><a href="#offcanvasLogin" class="nav-link" data-bs-toggle="offcanvas"><span><i class="bi bi-person"></i></span>Sign In</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+    
+    <section >
+        <div class="container mt-5" style="padding-top: 90px;">
+            <div class="row ">
+                <div class="col-lg-9 ">
+                    <div class="col-7  ">
+                        <h3>Account</h3>
+                        <p>To place your order now, log in to your existing account or sign up.</p>
+                        <p class="d-inline-flex gap-1">
+                            <a id="loginButton" class="" data-bs-toggle="collapse" href="#loginCollapse" role="button" >
+                             Have an account?<br>
+                             <span>LOG IN</span>
+                        
+
+                            </a>
+                            <a id="signupButton" class="ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#signupCollapse" >
+                              New to Swiggy?<br>
+                              <span>SIGN UP</span>
+                            </a>
+                          </p>
+                          <div class="collapse" id="loginCollapse">
+                            <h6>Enter login details or  <span><a href="#signupCollapse">create an account</a></span></h6>
+
+                                <div class="form-floating mt-5">
+                                    <input type="tel" class="form-control w-75 border-black" name="mobile"
+                                        id="mobile" maxlength="10" placeholder="Phone number">
+                                    <label for="" class="form-label">Phone number</label>
+                                </div>
+                                <br>
+                                <button class=" btn  w-75">LOGIN</button>
+                                <br>
+
+                                <p class="mt-2">By clicking on Login, I accept the <a href="">Terms &
+                                        Conditions</a> &
+                                    <a href="">Privacy Policy</a>
+                                </p>
+                            </form>
+                           
+                          </div>
+                          <!-- --signup-- -->
+                          <div class="collapse" id="signupCollapse">
+                            <h6>Sign up or <span><a href="#loginCollapse">log in to your account</a></span></h6>
+                            <form action="">
+                                <div class="form-floating mt-5">
+                                    <input type="tel" class="form-control w-75 border-black" name="mobile"
+                                        id="mobile" maxlength="10" placeholder="Phone number">
+                                    <label for="" class="form-label">Phone number</label>
+                                </div>
+                                <div class="form-floating mt-2">
+                                    <input type="text" class="form-control w-75 border-black" name="name" id="name"
+                                        maxlength="10" placeholder="enter name">
+                                    <label for="" class="form-label">Name</label>
+                                </div>
+                                <div class="form-floating mt-2">
+                                    <input type="email" class="form-control w-75 border-black" name="email"
+                                        id="email" maxlength="10" placeholder="enter email">
+                                    <label for="" class="form-label">Email</label>
+                                </div>
+                                <br>
+                                <button class="form-control btn w-75">CONTINUE</button>
+                                <br>
+
+
+                                <p class="mt-2">By clicking on Login, I accept the <a href="">Terms & Conditions</a>
+                                    & <a href="">Privacy Policy</a></p>
+                            </form>
+                           
+                          </div>
+                           
+                            
+                    </div>
+                    <!-- <div class="col-7"><img src="./images/restaurents/cheesecakeby cakes zone.avif" alt=""></div>
+                    <div class="col-7"><img src="./images/restaurents/cheesecakeby cakes zone.avif" alt=""></div> -->
+
+                </div>
+                <div class="col-lg-2"><img src="./images/restaurents/cheesecakeby cakes zone.avif" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./styles/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var loginButton = document.getElementById('loginButton');
+        var signupButton = document.getElementById('signupButton');
+        var loginCollapse = document.getElementById('loginCollapse');
+        var signupCollapse = document.getElementById('signupCollapse');
+        var createAccountLinks = document.querySelectorAll('a[href="#signupCollapse"]');
+        var loginLinks = document.querySelectorAll('a[href="#loginCollapse"]');
+    
+        loginButton.addEventListener('click', function () {
+            loginCollapse.classList.toggle('show');
+            signupCollapse.classList.remove('show');
+            loginButton.style.display = 'none';
+            signupButton.style.display = 'none';
+        });
+    
+        signupButton.addEventListener('click', function () {
+            signupCollapse.classList.toggle('show');
+            loginCollapse.classList.remove('show');
+            signupButton.style.display = 'none';
+            loginButton.style.display = 'none';
+        });
+
+          // Toggle signup section when "create an account" link is clicked
+    createAccountLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            signupCollapse.classList.toggle('show');
+            loginCollapse.classList.remove('show');
+            signupButton.style.display = 'none';
+            loginButton.style.display = 'none';
+        });
+    });
+
+    // Add event listener to each "login to your account" link
+    loginLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            loginCollapse.classList.toggle('show');
+            signupCollapse.classList.remove('show');
+            loginButton.style.display = 'none';
+            signupButton.style.display = 'none';
+        });
+    });
+
+    
+        // Check if collapse elements are shown on page load
+        if (loginCollapse.classList.contains('show')) {
+            loginButton.style.display = 'none';
+        } else if (signupCollapse.classList.contains('show')) {
+            signupButton.style.display = 'none';
+        }
+    });
+    </script>
+    
+</body>
+</html>
