@@ -352,3 +352,52 @@ body {
     color: #fff;
 
 }
+
+
+
+.qwerty{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #282c3f;
+    box-shadow: 0 3px 5px 0 rgba(40,44,63,.4);
+    top: 200px;
+    left: 85px;
+}
+.qwerty span{
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    margin-left: 4px;
+    font-size: 30px;
+}
+
+
+#cartcol1{
+
+    width: 725px;
+   
+  
+}
+
+#cartcol2,#cartcol3{
+   padding: 30px ;
+   width: 725px;
+    
+    
+}
+
+@media screen and (max-width:900px) {
+    #cartcol1{
+       
+        display: none;
+      
+    }
+    
+    #cartcol2,#cartcol3{
+       display: none;
+        
+    }
+
+    
+}
