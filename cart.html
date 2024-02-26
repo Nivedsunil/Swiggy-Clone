@@ -23,26 +23,110 @@
 
 
 </head>
-<body>
-   
+<body style="background-color: #e9ecee;">
 
-        <nav class="navbar navbar-expand fixed-top bg-light  shadow    ">
-            <a href="" class="navbar-brand ms-5"><img src="./images/icon.png" style="width: 13%;" alt=""></a>
-            <p>SECURECHECKOUT</p>
-            <div class="container-fluid justify-content-end">
-                
-                <ul class="navbar-nav me-5  justify-content-evenly">
-                    
-                    <li class="nav-item"><a href="" class="nav-link">Help</a></li>
-                    <li class="nav-item"><a href="#offcanvasLogin" class="nav-link" data-bs-toggle="offcanvas"><span><i class="bi bi-person"></i></span>Sign In</a></li>
-                    
-                    
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="./home.html"><img src="./images/icon.png"  alt=""></a>
+            <h6 class="">SECURE CHECKOUT</h6>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center">
+
+                    <li class="nav-item"><a href="" class="nav-link"><span><i class="bi bi-chat-right-dots"></i></span> Help</a></li>
+                    <li class="nav-item"><a href="#offcanvasLogin" class="nav-link" data-bs-toggle="offcanvas"><span><i class="bi bi-file-person"></i></span> Sign In</a></li>
+
                 </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    
+    <!-- ----- Offcanvas LOGIN ------ -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLogin" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLoginLabel">Login</h5>
+            <img src="./images/Image-login_btpq7r.avif " id="loginimg" alt="">
+
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body mt-5">
+            <p class>or<a href="#offcanvasCreateAccount" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasCreateAccount"><span> Create an account</span></a></p>
+            <hr>
+            <div>
+                <form action="">
+                    <div class="form-floating mt-5">
+                        <input type="tel" class="form-control w-75 border-black" name="mobile" id="mobile"
+                            maxlength="10" placeholder="Phone number">
+                        <label for="" class="form-label">Phone number</label>
+                    </div>
+                    <br>
+                    <button class=" btn w-75">LOGIN</button>
+                    <br>
+
+                    <p class="mt-2">By clicking on Login, I accept the <a href="">Terms & Conditions</a> & <a
+                            href="">Privacy Policy</a></p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ----- Offcanvas SIGN UP ------ -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCreateAccount"
+        aria-labelledby="offcanvasCreateAccountLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title " id="offcanvasCreateAccountLabel">Create an Account</h5>
+            <img src="./images/Image-login_btpq7r.avif " id="loginimg" alt="">
+
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body mt-5">
+
+            <p class>or<a href="#offcanvasLogin" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLogin"><span>
+                        Login to your account</span></a></p>
+            <hr>
+            <form action="">
+                <div class="form-floating mt-5">
+                    <input type="tel" class="form-control w-75 border-black" name="mobile" id="mobile" maxlength="10"
+                        placeholder="Phone number">
+                    <label for="" class="form-label">Phone number</label>
+                </div>
+                <div class="form-floating mt-2">
+                    <input type="text" class="form-control w-75 border-black" name="name" id="name" maxlength="10"
+                        placeholder="enter name">
+                    <label for="" class="form-label">Name</label>
+                </div>
+                <div class="form-floating mt-2">
+                    <input type="email" class="form-control w-75 border-black" name="email" id="email" maxlength="10"
+                        placeholder="enter email">
+                    <label for="" class="form-label">Email</label>
+                </div>
+                <br>
+                <button class="form-control btn  w-75">Login</button>
+                <br>
+
+
+                <p class="mt-2">By clicking on Login, I accept the <a href="">Terms & Conditions</a> & <a
+                        href="">Privacy Policy</a></p>
+            </form>
+        </div>
+    </div>
+
+    
+   
+
     
     <section  style="background-color: #e9ecee;">
-        <div class="container mt-5" style="padding-top: 90px;">
+        <div class="container mt-5" id="cartpadding">
             <div class="row ">
                 <div class="col-lg-7  col-sm-12 " >
                     <div class="col-lg-7 col-sm-12 p-5   bg-light " id="cartcol1">
@@ -65,12 +149,12 @@
                             <h6>Enter login details or  <span><a href="#signupCollapse">create an account</a></span></h6>
 
                                 <div class="form-floating mt-5">
-                                    <input type="tel" class="form-control w-75 border-black" name="mobile"
+                                    <input type="tel" class="form-control w-50 border-black" name="mobile"
                                         id="mobile" maxlength="10" placeholder="Phone number">
                                     <label for="" class="form-label">Phone number</label>
                                 </div>
                                 <br>
-                                <button class=" btn  w-75">LOGIN</button>
+                                <button class="  w-50">LOGIN</button>
                                 <br>
 
                                 <p class="mt-2">By clicking on Login, I accept the <a href="">Terms &
@@ -85,22 +169,22 @@
                             <h6>Sign up or <span><a href="#loginCollapse">log in to your account</a></span></h6>
                             <form action="">
                                 <div class="form-floating mt-5">
-                                    <input type="tel" class="form-control w-75 border-black" name="mobile"
+                                    <input type="tel" class="form-control w-50 border-black" name="mobile"
                                         id="mobile" maxlength="10" placeholder="Phone number">
                                     <label for="" class="form-label">Phone number</label>
                                 </div>
                                 <div class="form-floating mt-2">
-                                    <input type="text" class="form-control w-75 border-black" name="name" id="name"
+                                    <input type="text" class="form-control w-50 border-black" name="name" id="name"
                                         maxlength="10" placeholder="enter name">
                                     <label for="" class="form-label">Name</label>
                                 </div>
                                 <div class="form-floating mt-2">
-                                    <input type="email" class="form-control w-75 border-black" name="email"
+                                    <input type="email" class="form-control w-50 border-black" name="email"
                                         id="email" maxlength="10" placeholder="enter email">
                                     <label for="" class="form-label">Email</label>
                                 </div>
                                 <br>
-                                <button class="form-control btn w-75">CONTINUE</button>
+                                <button class=" w-50">CONTINUE</button>
                                 <br>
 
 
@@ -120,10 +204,10 @@
                     </div>
 
                 </div>
-                <div class="col-lg-5 col-sm-12 ">
+                <div class="col-lg-5  col-sm-12 ">
                     <div class="container-fluid">
                         <div class="row justify-content-center">
-                          <div class="col-sm-12 col-md-8 col-lg-10">
+                          <div class="col-sm-12 col-md-12 col-lg-10">
                             <div class="bg-light p-3 ">
                               <h2 class=" mb-3">Restaurant Name</h2>
                               <!-- <header class="bg-dark text-white text-center py-2">Header - Fixed</header> -->
@@ -148,7 +232,7 @@
 
                                     <textarea name="" id="" cols="40" rows="1" class=" border-0" placeholder="Any suggestions? We will pass it on..."></textarea>
 
-                                    <div class="border border-1 ">
+                                    <div class="border border-1 border-black ">
                                         <input type="checkbox" class="form-check">
                                         <label for="" class="form-check-label">Opt in for No-contact Delivery</label>
                                         

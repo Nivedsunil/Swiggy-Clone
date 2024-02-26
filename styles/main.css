@@ -4,11 +4,114 @@ body {
     overflow-x: hidden;
 }
 
+
+.navbar-brand img{
+    width:30px;
+
+}
+
 .landing-navbar{
     margin-left: 240px;
     margin-top: 60px;
     
 }
+
+.navbar ul li{
+    margin-right: 45px;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+#owl1{
+    padding-top: 90px;
+
+}
+#arab1{
+    padding-top: 80px;
+
+}
+#burg1{
+    padding-top: 80px;
+
+}
+#shaw1{
+    padding-top: 80px;
+
+}
+#cartpadding{
+    padding-top: 90px;
+
+}
+
+.navbar ul li span{
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .navbar ul li{
+        margin-right: 5px;
+       
+    
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .navbar.fixed-top {
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        width: 100%;
+       
+    }
+    /* .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     */
+
+    
+    .navbar ul li{
+        font-size: 20px;
+        
+        font-weight: 600;
+       
+       
+    
+    }
+  
+     #owl1{
+        padding-top: 0px;
+    
+    } 
+     #arab1{
+        padding-top: 0px;
+    
+    } 
+     #burg1{
+        padding-top: 0px;
+    
+    } 
+     #shaw1{
+        padding-top: 0px;
+    
+    } 
+     #cartpadding{
+        padding-top: 0px;
+    
+    } 
+
+    
+       
+
+    
+
+}
+
+
 
 .landing-logo {
    
@@ -294,6 +397,15 @@ body {
     width: 125px;
     right: 190px;
 }
+
+@media screen and (max-width: 600px) {
+    #loginimg{
+        position: absolute;
+        top: 30px;
+        width: 125px;
+        right: 60px;
+    }
+}
 .offcanvas-title {
     position: absolute;
     margin-top: 140px;
@@ -325,11 +437,7 @@ body {
     font-weight: 600;
 
 }
-/* @media screen and (max-width: 600px) {
-.qwerty{
-    position: ;
-}
-} */
+
 
 #loginButton {
     padding: 5px 35px;
@@ -353,6 +461,21 @@ body {
 
 }
 
+
+#loginCollapse button{
+    background-color: #60b246;
+    color: #fff;
+    border: #60b246;
+    padding: 10px 35px;
+
+}
+#signupCollapse button{
+    background-color: #60b246;
+    color: #fff;
+    border: #60b246;
+    padding: 10px 35px;
+
+}
 
 
 .qwerty{
@@ -400,4 +523,85 @@ body {
     }
 
     
+}
+#foot1{
+    background-color: rgb(240, 240, 245);;
+}
+   
+#footercol1 h1{
+
+    font-size: 30px;
+    margin-left: 100px;
+    
+}
+
+
+
+#footercol2 img{
+    
+    width: 35%;
+    
+}
+#footersec{
+    height: 45vh;
+    background-color:  rgb(2, 6, 12);
+
+}
+
+@media screen and (max-width:600px) {
+#footercol1{
+    display: none;
+    
+}
+#footercol2 img{
+    
+    width: 105%;
+    
+}
+#footersec{
+    height: 110vh;
+
+}
+}
+
+
+
+@media screen and (max-width:900px) {
+#footercol1{
+    display: none;
+    
+}
+#footercol2 img{
+    
+    width: 30%;
+    
+}
+/* #footersec{
+    height: 50vh;
+
+} */
+}
+
+
+
+
+
+.accordion-body{
+    height: 220px;
+}
+.accordion-body span{
+    font-size: larger;
+}
+
+
+
+/* ------styling------- */
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+
+.card:hover {
+    transform: scale(0.9); 
 }
